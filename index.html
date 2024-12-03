@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="icon" href="./img/icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+   
+  </head>
+  <body>
+ <section id="sign-page" class="d-flex vh-100 align-items-center justify-content-center">
+      <!-- sign up language -->
+      <div class="container p-4 bg-danger-subtle text-center" id="sign-up-page">
+        <div class="text-center ">
+            
+            
+            <h2 class="bg-primary rounded text-white">Smart Login System</h2>
+            
+            <label for="name-su" class="mt-3"><h4> Enter Your Name </h4></label>
+            
+            <input type="name" name="name" id="name-su" class="form-control">
+            <div class="d-none form-control bg-danger error" ></div>
+          
+
+            <label for="email-su"  class="mt-3"><h4> Enter Your Email </h4></label>
+            
+            <input type="email" name="email" id="email-su" class="form-control">
+            <div class="d-none form-control bg-danger error"></div>
+            
+            <label for="password-su"  class="mt-3"><h4> Enter Your Password </h4></label>
+            <input type="password" name="password" id="password-su" class="form-control">
+            <div class="d-none form-control bg-danger error"></div>
+            
+            <button type="submit" id="sign-up" class="btn btn-primary mt-4">Sign up <i class="fa-solid fa-user"></i><i class="fa-solid fa-check fa-bounce d-none p-2" id="suc"></i><i class="fa-solid fa-x fa-bounce d-none p-2" id="err"></i></button>
+        </div>
+
+        <p class="mt-3">you have acount? <a class="bg-danger text-white rounded p-1" id="g-s">Sign in</a></p>
+
+    </div>
+  
+  
+    <!-- log in page -->
+    <div class="container p-4 bg-danger-subtle visually-hidden text-center" id="sign-in-page">
+
+            <h2 class="bg-primary rounded text-white">Smart Login System</h2>
+            <label for="name"><h4> Enter Your Email </h4></label>
+            <input type="email" name="email" id="email-si" class="form-control">
+            <div class="d-none form-control bg-warning">error</div>
+            
+            <label for="name"><h4> Enter Your Password </h4></label>
+            <input type="password" name="password" id="password-si" class="form-control">
+            <div class="d-none form-control bg-warning">error</div>
+            
+            <button type="submit" id="sign-in" class="btn btn-primary mt-4">Sign in <i class="fa-solid fa-user"></i></button>
+      
+        <p>Don't you have acount? <a class="bg-danger text-white rounded p-1" id="g-s-u">Sign Up</a></p>
+
+    </div>
+
+ </section>
+
+
+
+ <!-- Home page !!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+ <section id="home-page" class="vh-100 d-flex align-items-center   visually-hidden">
+  <div class="container p-3 shadow bg-danger-subtle text-center">
+     <h2>Welcome To your Page</h2>
+     <h4>User <strong id="user-name"></strong></h4>
+     
+     <button class="btn btn-secondary" id="log-out">Log out <i class="fa-solid fa-right-from-bracket"></i></button>
+  </div>
+ </section>
+    
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
